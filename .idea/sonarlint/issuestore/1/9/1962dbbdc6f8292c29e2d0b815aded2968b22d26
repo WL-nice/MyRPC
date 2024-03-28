@@ -1,0 +1,16 @@
+
+}
+java:S1118":Add a private constructor to hide the implicit public one.( ¡©“8œ¥¢è1J$cdf2e363-8882-4519-8451-90144d50fa42
+’
+java:S3252("OUse static access with "cn.hutool.core.text.CharSequenceUtil" for "isNotBlank".(ª´±…8‘œ¥¢è1J$131f1bfe-867b-4493-9188-3666fddadbe4
+w
+java:S1128"4Remove this unused import 'org.yaml.snakeyaml.Yaml'.(œ¯—•8çË¸¢è1J$50808074-8cfb-41e6-8635-1cf0299caebc
+w
+java:S1128"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8èË¸¢è1J$9f142360-0383-4c8d-b9a8-6ddb458391f4
+‚
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8–œ¥¢è1J$74559ea9-46e4-41cd-bd0e-1446f705ca36
+x
+java:S1128	"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8èË¸¢è1J$e7e7bb59-0764-4f8f-a079-f0d2b0472541
+s
+java:S1128
+"0Remove this unused import 'java.io.InputStream'.(¹»º8èË¸¢è1J$cc9b5efa-c15c-4010-9ccd-0719c16b6549
