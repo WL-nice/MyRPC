@@ -1,6 +1,5 @@
 
 }
-java:S1118	":Add a private constructor to hide the implicit public one.(š¨É8ä ¡è1J$4c69efe9-170c-4e02-a568-40e871e74f58
-y
-java:S3077
-"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(±˜Ú‘øÿÿÿÿ8İçÄ¦è1
+java:S1118":Add a private constructor to hide the implicit public one.(š¨É8‡‘ŸÏè1J$422bf983-cafe-4af4-8c8a-305da024fd92
+Ÿ
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(±˜Ú‘øÿÿÿÿ8ˆ‘ŸÏè1J$8873273b-9f90-4cee-abe7-f9031cfb1405

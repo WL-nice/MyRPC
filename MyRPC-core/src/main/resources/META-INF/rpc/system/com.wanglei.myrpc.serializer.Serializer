@@ -1,0 +1,4 @@
+jdk=com.wanglei.myrpc.serializer.JdkSerializer
+hessian=com.wanglei.myrpc.serializer.HessianSerializer
+json=com.wanglei.myrpc.serializer.JsonSerializer
+kryo=com.wanglei.myrpc.serializer.KryoSerializer

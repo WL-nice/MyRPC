@@ -11,7 +11,6 @@ public class EasyConsumerExample {
         UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
         user.setName("heihei");
-
         User newUser =userService.getUser(user);
         if(newUser == null){
             System.out.println("user == null");

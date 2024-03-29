@@ -2,13 +2,6 @@ package com.wanglei.myrpc.utils;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.setting.dialect.Props;
-import org.yaml.snakeyaml.Yaml;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-
 /**
  * 配置工具类
  */

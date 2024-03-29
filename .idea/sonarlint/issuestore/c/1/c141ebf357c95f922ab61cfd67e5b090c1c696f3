@@ -1,4 +1,6 @@
 
 ¯
-java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8ÌÉ×£è1J$c86b04d2-d375-4bc6-9515-9a326afd2f3d
-r	java:S106"+Replace this use of System.out by a logger.(·ùßóýÿÿÿÿ8ÌáØ£è1J$1b122bf4-7c50-4d32-b6ea-e4ce6e8b46dd
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8ÌÉ×£è1J$68fb1772-dce2-465b-9be6-cc2fcdfcda20
+m	java:S106"+Replace this use of System.out by a logger.(“þ¶÷8íô¤Ëè1J$b9979050-6ace-466b-a0eb-cc78be1917bc
+r	java:S106"+Replace this use of System.out by a logger.(õÃß×ýÿÿÿÿ8íô¤Ëè1J$37c02211-5d31-49ee-b849-09c9f24fd285
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ê„ã°ÿÿÿÿÿ8éàÉè1J$bfdce2d0-d4ea-4699-aabe-cda66d333774

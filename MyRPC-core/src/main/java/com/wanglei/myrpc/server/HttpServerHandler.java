@@ -1,14 +1,17 @@
 package com.wanglei.myrpc.server;
 
+import com.wanglei.myrpc.RpcApplication;
 import com.wanglei.myrpc.model.RpcRequest;
 import com.wanglei.myrpc.model.RpcResponse;
 import com.wanglei.myrpc.registry.LocalRegistry;
 import com.wanglei.myrpc.serializer.JdkSerializer;
 import com.wanglei.myrpc.serializer.Serializer;
+import com.wanglei.myrpc.serializer.SerializerFactory;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.http.HttpServerResponse;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -16,6 +19,7 @@ import java.lang.reflect.Method;
 /**
  * HTTP请求处理
  */
+@Slf4j
 public class HttpServerHandler implements Handler<HttpServerRequest> {
 
     //反序列化请求为对象，并从请求对象中获取参数
@@ -26,10 +30,10 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
     @Override
     public void handle(HttpServerRequest request) {
         //指定序列化容器
-        final Serializer serializer = new JdkSerializer();
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
 
         //记录日志
-        System.out.println("接受请求:" + request.method() + " " + request.uri());
+        log.info("接受请求:" + request.method() + " " + request.uri());
 
         //异步处理HTTP请求
         request.bodyHandler(body->{
@@ -83,7 +87,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             byte[] serialized = serializer.serialize(rpcResponse);
             httpServerResponse.end(Buffer.buffer(serialized));
         }catch (IOException e){
-            e.printStackTrace();;
+            e.printStackTrace();
             httpServerResponse.end(Buffer.buffer());
         }
     }

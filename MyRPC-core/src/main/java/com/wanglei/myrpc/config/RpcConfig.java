@@ -1,5 +1,6 @@
 package com.wanglei.myrpc.config;
 
+import com.wanglei.myrpc.serializer.SerializerKeys;
 import lombok.Data;
 
 /**
@@ -28,6 +29,13 @@ public class RpcConfig {
      */
     private Integer serverPort = 8070;
 
+    /**
+     * 序列化器
+     */
+    private String serializer = SerializerKeys.JDK;
+
     private boolean mock = false;
+
+    private RegistryConfig registryConfig = new RegistryConfig();
 
 }
